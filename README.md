@@ -161,32 +161,25 @@ This is the code conventions used, it primarily depends on the clean code implem
 
 ## Project Dependencies
 
-`dependencies:
-flutter:
-sdk: flutter
 
-# State management
-flutter_bloc: ^8.1.6
+    ### state managment package
+    flutter_bloc: ^8.1.6
 
-# Network requests
-dio: ^5.7.0
+    ### Network Request package
+    dio: ^5.7.0
+    
+    sqflite: ^2.4.0
+    path: ^1.9.0
+    
+    ### data tabel used displaying repositories
+    data_table_2: ^2.5.15
 
-# SQLite database
-sqflite: ^2.4.0
-path: ^1.9.0
+    ### used to display svg icons
+    flutter_svg: ^2.0.13
 
-# iOS style icons
-cupertino_icons: ^1.0.8
+    ### used to show image from url
+    extended_image: ^9.0.7
 
-# Data table for displaying repositories
-data_table_2: ^2.5.15
-
-# SVG rendering
-flutter_svg: ^2.0.13
-
-# Image rendering from URL
-extended_image: ^9.0.7
-
-# URL launcher
-url_launcher:
-`
+    ### used to show url launcher
+    url_launcher:
+    
