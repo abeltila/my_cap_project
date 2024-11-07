@@ -1,5 +1,8 @@
 part of 'index.dart';
 
+//Route Generator is were we declare
+//the routes declared in [routing constants]
+//and the widget that we navigate too
 class RouteGenerator {
   static Route<dynamic>? generateRoute(RouteSettings settings) {
     switch (settings.name) {

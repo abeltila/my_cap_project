@@ -1,5 +1,6 @@
 part of 'index.dart';
 
+//StartedRepoDetailScreen displays the repo detail wit the image and detail information
 class StartedRepoDetailScreen extends StatelessWidget {
   const StartedRepoDetailScreen({super.key});
 

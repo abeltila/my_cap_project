@@ -1,5 +1,6 @@
 part of 'index.dart';
 
+//static colors config files to list all of the colors that the app uses
 class AppColorsConfig {
   // Primary Colors
   static const Color primary = Color(0xFF2b2b2b);  // Example: Purple

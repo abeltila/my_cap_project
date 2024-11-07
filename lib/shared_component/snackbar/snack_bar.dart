@@ -1,11 +1,17 @@
 part of 'index.dart';
 
+/// Utility class for displaying custom snack bars.
 class SnackBarUti {
+  /// Displays an error snack bar with a rounded design at the bottom of the screen.
+  ///
+  /// [context] is used to access the overlay and theme properties.
+  /// [message] is the error message to display.
+  /// [duration] specifies how long the snack bar remains visible (default is 3 seconds).
   static void showErorSnackBar(
-    BuildContext context,
-    String message, {
-    Duration duration = const Duration(seconds: 3),
-  }) {
+      BuildContext context,
+      String message, {
+        Duration duration = const Duration(seconds: 3),
+      }) {
     final overlay = Overlay.of(context);
     final overlayEntry = OverlayEntry(
       builder: (context) => Positioned(
@@ -32,10 +38,10 @@ class SnackBarUti {
       ),
     );
 
-    // Insert the overlay entry into the overlay
+    // Insert the overlay entry into the overlay.
     overlay.insert(overlayEntry);
 
-    // Remove the overlay entry after the specified duration
+    // Remove the overlay entry after the specified duration.
     Future.delayed(duration, () {
       overlayEntry.remove();
     });

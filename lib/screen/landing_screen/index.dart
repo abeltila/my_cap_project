@@ -4,9 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_cap_project/config/index.dart';
 import 'package:my_cap_project/cubit/index.dart';
 import 'package:my_cap_project/model/index.dart';
-import 'package:my_cap_project/shared_component/appbar/index.dart';
 import 'package:my_cap_project/shared_component/index.dart';
 import 'package:my_cap_project/utils/constants/index.dart';
-import 'package:my_cap_project/utils/helpers/index.dart';
 
 part 'landing_screen.dart';

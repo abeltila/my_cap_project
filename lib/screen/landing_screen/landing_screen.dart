@@ -1,5 +1,7 @@
 part of 'index.dart';
 
+//Landing screen to show the table
+//This is the initial page that users see when they open the app
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
 
@@ -7,6 +9,7 @@ class LandingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<LandingScreenCubit, LandingScreenState>(
       listener: (context, state) {
+        //We show snack bar if errors occurred
         if (state is LandingScreenRowTappedState) {
           Navigator.pushNamed(context, RouteConstants.startedRepoDetailScreen,
               arguments: {'url': state.url});

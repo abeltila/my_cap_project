@@ -1,4 +1,5 @@
 part of 'index.dart';
+//Owner of repository page
 class Owner {
   final int id;
   final String avatarUrl;
